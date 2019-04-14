@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+.container {
+  margin-bottom: 15px;
+}
 
 /* Resize container for large screens*/
 @media (min-width: 1200px) {
