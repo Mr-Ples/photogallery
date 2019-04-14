@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
+.card-img-top {
+  height: 20vw;
+  object-fit: cover;
+}
+
+/** Navbar CSS**/
+.navbar {
+  position: fixed;
+  top: 0;
+  max-height: 75px;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom-style: solid;
+  border-bottom-width: 1.2px;
+  border-color: #d8d8d8;
+  transition: 0.4s;
+  z-index: 99;
+  transition-delay: 0.25s;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.logo {
+  float: left;
+  font-family: "Pacifico", cursive;
+  padding: 15px;
+  transition: 0.4s;
+  transition-delay: 0.25s;
+  font-size: 25px;
+}
+
+.vertical {
+  float: left;
+  padding: 13px;
+  font-size: 25px;
+  font-style: bold;
+  margin: 25px 0px 22px 0px;
+  transition: 0.4s;
+  transition-delay: 0.25s;
+  border-right: 1px solid black;
+}
+
+header {
+  margin-top: 10%;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
