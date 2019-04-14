@@ -3,10 +3,36 @@
   margin: 0;
 }
 
-/* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
+/* Resize container for large screens*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* Equal-height card images*/
 .card-img-top {
-  height: 20vw;
+  height: 25vw;
   object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 60vw;
+  }
+}
+
+/* resize card body*/
+.card-body {
+  max-height: 10vw;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    min-height: 40vw;
+    overflow: hidden;
+  }
 }
 
 /** Navbar CSS**/
@@ -40,19 +66,28 @@ body {
   font-size: 25px;
 }
 
+.logo1 {
+  float: left;
+  padding: 13px 0px 15px 25px;
+  transition: 0.4s;
+  transition-delay: 0.25s;
+  font-size: 25px;
+}
+
 .vertical {
   float: left;
   padding: 13px;
+  padding-left: 0px;
   font-size: 25px;
   font-style: bold;
-  margin: 25px 0px 22px 0px;
+  margin: 25px 0px 20px 0px;
   transition: 0.4s;
   transition-delay: 0.25s;
   border-right: 1px solid black;
 }
 
 header {
-  margin-top: 15%;
+  margin-top: 100px;
 }
 
 /** LIGHTBOX MARKUP **/
@@ -76,7 +111,7 @@ header {
   /** Pad the lightbox image */
   max-width: 90%;
   max-height: 80%;
-  margin-top: 2%;
+  margin-top: 10vh;
 }
 
 .lightbox:target {
