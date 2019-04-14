@@ -85,15 +85,6 @@
                 alt="Card image cap"
               />
             </a>
-
-            <div class="card-body">
-              <h5 class="card-title">'.$row['Name'].'</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p> 
-            </div>
           </div>';
       }else if($z == 2 || $z == 3){ echo '
 
@@ -111,16 +102,6 @@
                 alt="Card image cap"
               />
             </a>
-
-            <div class="card-body">
-              <h5 class="card-title">'.$row['Name'].'</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-                
-            </div>
           </div>';
       } else if ($z ==4) {       
         echo'  
@@ -141,13 +122,6 @@
               alt="Card image cap"
             />
           </a>
-
-          <div class="card-body">
-            <h5 class="card-title">'.$row['Name'].'</h5>
-            <p class="card-text">
-              Card text can be added here from the back-end
-            </p>
-          </div>
         </div>';}
         $z++;
                       
