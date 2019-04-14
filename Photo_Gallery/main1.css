@@ -3,10 +3,20 @@
   margin: 0;
 }
 
-/* Equal-height card images, cf. https://stackoverflow.com/a/47698201/1375163*/
+
+
+/* Equal-height card images*/
 .card-img-top {
   height: 20vw;
   object-fit: cover;
+}
+
+/* Equal height card text values to avoid long columns of text */
+.card-text {
+  font-size: 19px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /** Navbar CSS**/
